@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+
+</head>
+<body>
+	<form action="/submit_form" method="post" enctype="multipart/form-data">
+		<label for="myFile" class="file-label">
+			<i class="fas fa-cloud-upload-alt"></i>
+			<span class="file-text">Choose a file to upload</span>
+			<input type="file" id="myFile" name="myFile" class="file-input">
+		</label>
+		<button type="submit" class="submit-button">Submit</button>
+	</form>
+</body>
+</html>
+
